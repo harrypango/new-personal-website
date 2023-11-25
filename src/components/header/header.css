@@ -1,0 +1,177 @@
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+/* 
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+} */
+
+body {
+  background-image: url(../../assets/ellipseBig.svg);
+  background-size: 50%;
+  /* background-position: 0px 0px;
+  background-repeat: repeat-y;
+  animation: animatedBackground 10s linear infinite alternate; */
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem 4rem;
+}
+
+.header__container-left {
+  flex: 0.5;
+}
+
+.header__container-left_heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__container-left_heading p {
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 16px;
+}
+
+.header__container-left_heading div {
+  width: 38px;
+  height: 3px;
+  background: #000;
+}
+
+.header__container-profession h1 {
+  color: #000;
+  font-family: "Vollkorn", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90%;
+  text-wrap: wrap;
+  margin: 0;
+}
+
+.header__container-right {
+  flex: 0.4;
+}
+
+.header__container-right p {
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.header__container-right div {
+  width: 38px;
+  height: 3px;
+  background: #000;
+  margin-bottom: 17px;
+}
+
+.header__container-footer {
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.header__container-footer_contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.header__container-footer_contact a {
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 16.472px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header__container-footer_contact p:hover {
+  color: var(--color-main);
+  transition-duration: 0.4s;
+}
+
+.header__container-footer_projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__container-footer_projects p {
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 82.336%;
+  margin-right: 110px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  /* padding-bottom: 5px; */
+}
+
+.header__container-footer_projects p:last-child {
+  margin-right: 0px;
+}
+
+.header__container-footer_projects p:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header__container-footer_projects p:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header__container-footer_projects p:last-child {
+  padding-right: 0;
+}
+
+.logo {
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em var(--color-main));
+}
