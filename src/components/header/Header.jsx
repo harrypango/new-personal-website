@@ -35,14 +35,14 @@ function Header() {
           </div>
 
           <div className="header__container-footer_projects">
-            <p>VanillaJS</p>
-            <p>ReactJS</p>
-            <p>Wordpress</p>
+            <a href="#projects">VanillaJS</a>
+            <a href="#projects">ReactJS</a>
+            <a href="#projects">Wordpress</a>
           </div>
 
           <div className="header__container-footer_react">
             <a
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="https://media.tenor.com/CWgfFh7ozHkAAAAC/rick-astly-rick-rolled.gif"
               target="_blank"
             >
               <img src={reactLogo} className="logo react" alt="React logo" />
