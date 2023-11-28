@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import reactLogo from "../../assets/react.svg";
 import "./header.css";
 
 function Header() {
+  const [activeLinks, setActiveLinks] = useState([false, true, false]);
+
+  function activate(index) {
+    const newActiveLinks = activeLinks.map((link, i) =>
+      i === index ? true : false
+    );
+    setActiveLinks(newActiveLinks);
+  }
   return (
     <>
       <div className="header">
@@ -35,9 +43,33 @@ function Header() {
           </div>
 
           <div className="header__container-footer_projects">
-            <a href="#projects">VanillaJS</a>
-            <a href="#projects">ReactJS</a>
-            <a href="#projects">Wordpress</a>
+            <a
+              className={
+                activeLinks[0] ? "project-link" : "project-link-nonactive"
+              }
+              href="#projects"
+              onClick={() => activate(0)}
+            >
+              VanillaJS
+            </a>
+            <a
+              className={
+                activeLinks[1] ? "project-link" : "project-link-nonactive"
+              }
+              href="#projects"
+              onClick={() => activate(1)}
+            >
+              ReactJS
+            </a>
+            <a
+              className={
+                activeLinks[2] ? "project-link" : "project-link-nonactive"
+              }
+              href="#projects"
+              onClick={() => activate(2)}
+            >
+              Wordpress
+            </a>
           </div>
 
           <div className="header__container-footer_react">

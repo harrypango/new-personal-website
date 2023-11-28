@@ -1,7 +1,17 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .projects {
   margin: 4rem 4rem 8rem;
   display: flex;
   flex-direction: row;
+  animation: fadeIn 0.5s;
 }
 
 .projects__container {
@@ -18,9 +28,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  /* .projects {
-    max-width: 100%;
-  } */
   .projects__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

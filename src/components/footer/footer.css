@@ -4,14 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid var(--bottom-border);
+  border-top: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer p {
-  color: #000;
   font-family: var(--font-family);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 82.336%;
 }
 

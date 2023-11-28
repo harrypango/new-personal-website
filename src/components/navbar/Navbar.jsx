@@ -21,7 +21,7 @@ function Navbar() {
           <img src={logo} alt="logo" />
         </div>
         <div className="navbar__links">
-          <a
+          <a 
             href="https://github.com/harrypango"
             target="_blank"
             onClick={() => activate(0)}

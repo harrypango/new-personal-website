@@ -1,8 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 @import url("https://fonts.cdnfonts.com/css/vollkorn");
+@import url("https://fonts.cdnfonts.com/css/inter");
 
 :root {
-  --font-family: "Montserrat", sans-serif;
+  --font-family: "Inter", sans-serif;
 
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
