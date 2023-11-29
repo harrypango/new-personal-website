@@ -48,12 +48,11 @@ function Header() {
             </a>
           </div>
 
-          <div className="header__container-footer_projects" id="projects">
+          <div className="header__container-footer_projects">
             <a
               className={
                 activeLinks[0] ? "project-link" : "project-link-nonactive"
               }
-              href="#projects"
               onClick={() => {
                 activate(0);
                 handleProjectClick("vanilla");
@@ -65,7 +64,6 @@ function Header() {
               className={
                 activeLinks[1] ? "project-link" : "project-link-nonactive"
               }
-              href="#projects"
               onClick={() => {
                 activate(1);
                 handleProjectClick("react");
@@ -77,7 +75,6 @@ function Header() {
               className={
                 activeLinks[2] ? "project-link" : "project-link-nonactive"
               }
-              href="#projects"
               onClick={() => {
                 activate(2);
                 handleProjectClick("wordpress");
