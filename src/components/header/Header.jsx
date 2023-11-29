@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import reactLogo from "../../assets/react.svg";
+import { useProjectContext } from "../../ProjectContext";
 import "./header.css";
 
 function Header() {
+  const { setProjectType } = useProjectContext();
+
+  const handleProjectClick = (projectType) => {
+    setProjectType(projectType);
+  };
   const [activeLinks, setActiveLinks] = useState([false, true, false]);
 
   function activate(index) {
@@ -42,13 +48,16 @@ function Header() {
             </a>
           </div>
 
-          <div className="header__container-footer_projects">
+          <div className="header__container-footer_projects" id="projects">
             <a
               className={
                 activeLinks[0] ? "project-link" : "project-link-nonactive"
               }
               href="#projects"
-              onClick={() => activate(0)}
+              onClick={() => {
+                activate(0);
+                handleProjectClick("vanilla");
+              }}
             >
               VanillaJS
             </a>
@@ -57,7 +66,10 @@ function Header() {
                 activeLinks[1] ? "project-link" : "project-link-nonactive"
               }
               href="#projects"
-              onClick={() => activate(1)}
+              onClick={() => {
+                activate(1);
+                handleProjectClick("react");
+              }}
             >
               ReactJS
             </a>
@@ -66,7 +78,10 @@ function Header() {
                 activeLinks[2] ? "project-link" : "project-link-nonactive"
               }
               href="#projects"
-              onClick={() => activate(2)}
+              onClick={() => {
+                activate(2);
+                handleProjectClick("wordpress");
+              }}
             >
               Wordpress
             </a>

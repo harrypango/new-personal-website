@@ -11,7 +11,6 @@
   margin: 4rem 4rem 8rem;
   display: flex;
   flex-direction: row;
-  animation: fadeIn 0.5s;
 }
 
 .projects__container {
@@ -19,6 +18,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 60px;
   align-items: baseline;
+  animation: fadeIn 0.5s;
 }
 
 @media screen and (max-width: 768px) {

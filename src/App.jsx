@@ -1,15 +1,18 @@
 import React from "react";
 import { Navbar, Header, Projects, Footer } from "./components";
 import "./app.css";
+import { ProjectProvider } from "./ProjectContext";
 
 function App() {
   return (
     <>
       <div>
-        <Navbar />
-        <Header />
-        <Projects />
-        <Footer />
+        <ProjectProvider>
+          <Navbar />
+          <Header />
+          <Projects />
+          <Footer />
+        </ProjectProvider>
       </div>
     </>
   );
