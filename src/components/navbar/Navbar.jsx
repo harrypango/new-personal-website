@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import openMenu from "../../assets/openMenu.svg";
 import logo from "../../assets/logo.svg";
@@ -47,6 +47,15 @@ const Menu = () => {
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  useEffect(() => {
+    if (toggleMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  });
+
   return (
     <>
       <div className="navbar">

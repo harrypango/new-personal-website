@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./projects.css";
 import Project from "../../containers/project/Project";
 import { vanillaProjects } from "./vanillaProjects";
@@ -8,15 +8,18 @@ import { useProjectContext } from "../../ProjectContext";
 
 function Projects() {
   const { activeProjectType } = useProjectContext();
+  const [projectsToShow, setProjectsToShow] = useState([]);
 
-  let projectsToShow = [];
-  if (activeProjectType === "vanilla") {
-    projectsToShow = vanillaProjects;
-  } else if (activeProjectType === "react") {
-    projectsToShow = reactProjects;
-  } else if (activeProjectType === "wordpress") {
-    projectsToShow = wpProjects;
-  }
+  useEffect(() => {
+    if (activeProjectType === "vanilla") {
+      setProjectsToShow(vanillaProjects);
+    } else if (activeProjectType === "react") {
+      setProjectsToShow(reactProjects);
+    } else if (activeProjectType === "wordpress") {
+      setProjectsToShow(wpProjects);
+    }
+  }, [activeProjectType]);
+
   return (
     <>
       <div className="projects" id="projects">
