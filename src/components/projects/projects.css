@@ -19,6 +19,7 @@
   grid-gap: 60px;
   align-items: baseline;
   animation: fadeIn 0.5s;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
