@@ -7,6 +7,11 @@
   padding: 5px;
 }
 
+.projects__container-project img:hover {
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
 .projects__container-details {
   display: flex;
   justify-content: space-between;
