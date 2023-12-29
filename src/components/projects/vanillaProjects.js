@@ -1,9 +1,9 @@
-import bankly from "../../assets/bankly.png";
-import bankist from "../../assets/bankist.png";
-import weatherly from "../../assets/weather.png";
-import calculator from "../../assets/calculator.png";
-import todo from "../../assets/todo.png";
-import guessnum from "../../assets/guessnum.png";
+import bankly from "../../assets/bankly.jpg";
+import bankist from "../../assets/bankist.jpg";
+import weatherly from "../../assets/weather.jpg";
+import calculator from "../../assets/calculator.jpg";
+import todo from "../../assets/todo.jpg";
+import guessnum from "../../assets/guessnum.jpg";
 
 export const vanillaProjects = [
   {

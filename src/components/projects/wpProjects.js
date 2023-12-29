@@ -1,9 +1,9 @@
-import hyperweb from "../../assets/hyperweb.png";
-import gf from "../../assets/gf.png";
-import alison from "../../assets/alison.png";
-import prime from "../../assets/prime.png";
-import alter from "../../assets/alter.png";
-import resume from "../../assets/resume.png";
+import hyperweb from "../../assets/hyperweb.jpg";
+import gf from "../../assets/gf.jpg";
+import alison from "../../assets/alison.jpg";
+import prime from "../../assets/prime.jpg";
+import resume from "../../assets/resume.jpg";
+import ale from "../../assets/ale.jpg";
 
 export const wpProjects = [
   {
@@ -32,11 +32,11 @@ export const wpProjects = [
   },
   {
     key: 3,
-    title: "Alter Architects",
-    type: "Architectural Studio",
-    src: alter,
-    tag: "In Progress",
-    href: "https://alter-architects.com/",
+    title: "ALE Advisers",
+    type: "Consultancy Agency",
+    src: ale,
+    tag: "Completed",
+    href: "https://ale.al/en/",
   },
   {
     key: 4,
