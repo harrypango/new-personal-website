@@ -3,7 +3,7 @@ import gf from "../../assets/gf.jpg";
 import alison from "../../assets/alison.jpg";
 import prime from "../../assets/prime.jpg";
 import resume from "../../assets/resume.jpg";
-import ale from "../../assets/ale.jpg";
+import kaon from "../../assets/kaon.jpg";
 
 export const wpProjects = [
   {
@@ -32,11 +32,11 @@ export const wpProjects = [
   },
   {
     key: 3,
-    title: "ALE Advisers",
-    type: "Consultancy Agency",
-    src: ale,
+    title: "Kaon Roofs",
+    type: "Roofing Contractors",
+    src: kaon,
     tag: "Completed",
-    href: "https://ale.al/en/",
+    href: "https://kaonroofs.com/",
   },
   {
     key: 4,
