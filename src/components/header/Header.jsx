@@ -80,7 +80,7 @@ function Header() {
                 handleProjectClick("wordpress");
               }}
             >
-              Wordpress
+              Freelance
             </a>
           </div>
 

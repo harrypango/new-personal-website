@@ -4,6 +4,8 @@ import alison from "../../assets/alison.jpg";
 import prime from "../../assets/prime.jpg";
 import resume from "../../assets/resume.jpg";
 import kaon from "../../assets/kaon.jpg";
+import ama from "../../assets/ama.jpg";
+import ale from "../../assets/ale.jpg";
 
 export const wpProjects = [
   {
@@ -53,5 +55,21 @@ export const wpProjects = [
     src: resume,
     tag: "Completed",
     href: "https://yllipango.com/#about-me",
+  },
+  {
+    key: 6,
+    title: "Ama Dentistry",
+    type: "Dental Clinic",
+    src: ama,
+    tag: "Completed",
+    href: "https://amadentistry.com/",
+  },
+  {
+    key: 7,
+    title: "Ale AL",
+    type: "Business Consultancy",
+    src: ale,
+    tag: "Completed",
+    href: "https://ale.al/",
   },
 ];

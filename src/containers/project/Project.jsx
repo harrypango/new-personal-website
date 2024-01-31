@@ -6,7 +6,7 @@ function Project({ title, type, src, tag, href }) {
     <>
       <div className="projects__container-project">
         <a href={href} target="_blank">
-          <img src={src} />
+          <img src={src} loading="lazy" />
         </a>
         <div className="projects__container-details">
           <div className="projects__container-details_left">

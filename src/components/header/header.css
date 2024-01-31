@@ -61,7 +61,7 @@ body {
 }
 
 .header__container-profession h1 {
-  font-family: "Vollkorn", sans-serif;
+  font-family: var(--font-family);
   font-size: 80px;
   font-weight: 400;
   line-height: 90%;
@@ -109,6 +109,10 @@ body {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.header__container-footer_contact p {
+  margin-right: 0;
 }
 
 .header__container-footer_contact p:hover {
@@ -259,6 +263,10 @@ body {
 
   .header__container-footer_projects {
     justify-content: center;
+  }
+
+  .header__container-footer_react {
+    display: none;
   }
 
   .logo {
