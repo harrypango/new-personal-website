@@ -220,6 +220,12 @@ body {
   background: none;
 }
 
+@media screen and (min-width: 1025px) {
+  .header__container-footer_projects {
+    margin-left: 80px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .header__container-right {
     padding-top: 20px;
