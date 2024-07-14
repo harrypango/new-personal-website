@@ -8,9 +8,11 @@ export const reactProjects = [
     title: "Musify",
     type: "Spotify-like App",
     src: musify,
-    tag: "In Progress",
+    tag: "Completed",
     href: "https://musify-hp.netlify.app/",
+    alt: "Musify",
   },
+
   {
     key: 1,
     title: "Alter Architects",
@@ -18,7 +20,9 @@ export const reactProjects = [
     src: alter,
     tag: "In Progress",
     href: "https://alter-architects.com/",
+    alt: "Alter Architects",
   },
+
   {
     key: 2,
     title: "Modern AI",
@@ -26,5 +30,6 @@ export const reactProjects = [
     src: modernai,
     tag: "Completed",
     href: "https://modern-ai-hp.netlify.app/",
+    alt: "Modern AI",
   },
 ];

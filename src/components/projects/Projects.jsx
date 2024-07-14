@@ -32,6 +32,7 @@ function Projects() {
               src={project.src}
               tag={project.tag}
               href={project.href}
+              alt={project.alt}
             />
           ))}
         </div>

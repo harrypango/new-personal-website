@@ -81,7 +81,7 @@ function Navbar() {
           </div>
           <div className="overlay_items">
             <Menu />
-            <a href="mailto: harry.pango@gmail.com" target="_blank">
+            <a href="mailto: harry.pango@gmail.com" target="_blank" rel="noreferrer">
               <p>E-mail me!</p>
             </a>
           </div>

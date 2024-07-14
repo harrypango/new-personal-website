@@ -15,7 +15,9 @@ export const wpProjects = [
     src: hyperweb,
     tag: "Completed",
     href: "https://hyperweb.al/",
+    alt: "Hyperweb",
   },
+
   {
     key: 1,
     title: "Alison Mariot",
@@ -23,7 +25,9 @@ export const wpProjects = [
     src: alison,
     tag: "Completed",
     href: "https://alisonmariot.com/",
+    alt: "Alison Mariot",
   },
+
   {
     key: 2,
     title: "Construction GF",
@@ -31,7 +35,9 @@ export const wpProjects = [
     src: gf,
     tag: "Completed",
     href: "https://www.construction-gf.com/",
+    alt: "Construction GF",
   },
+
   {
     key: 3,
     title: "Kaon Roofs",
@@ -39,7 +45,9 @@ export const wpProjects = [
     src: kaon,
     tag: "Completed",
     href: "https://kaonroofs.com/",
+    alt: "Kaon Roofs",
   },
+
   {
     key: 4,
     title: "Prime Agency",
@@ -47,7 +55,9 @@ export const wpProjects = [
     src: prime,
     tag: "Completed",
     href: "https://imobiliareprime.com/sq",
+    alt: "Prime Agency",
   },
+
   {
     key: 5,
     title: "Resume",
@@ -55,7 +65,9 @@ export const wpProjects = [
     src: resume,
     tag: "Completed",
     href: "https://yllipango.com/#about-me",
+    alt: "Resume",
   },
+
   {
     key: 6,
     title: "Ama Dentistry",
@@ -63,7 +75,9 @@ export const wpProjects = [
     src: ama,
     tag: "Completed",
     href: "https://amadentistry.com/",
+    alt: "Ama Dentistry",
   },
+
   {
     key: 7,
     title: "Ale AL",
@@ -71,5 +85,6 @@ export const wpProjects = [
     src: ale,
     tag: "Completed",
     href: "https://ale.al/",
+    alt: "Ale AL",
   },
 ];

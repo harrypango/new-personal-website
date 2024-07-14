@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Header, Projects, Footer } from "./components";
-import "./app.css";
+import "./App.css";
 import { ProjectProvider } from "./ProjectContext";
 
 function App() {

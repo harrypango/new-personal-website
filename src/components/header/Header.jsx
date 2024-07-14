@@ -43,13 +43,18 @@ function Header() {
 
         <div className="header__container-footer">
           <div className="header__container-footer_contact">
-            <a href="mailto: harry.pango@gmail.com" target="_blank">
+            <a
+              href="mailto: harry.pango@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>E-mail me!</p>
             </a>
           </div>
 
           <div className="header__container-footer_projects">
             <a
+              href="#vanilla"
               className={
                 activeLinks[0] ? "project-link" : "project-link-nonactive"
               }
@@ -61,6 +66,7 @@ function Header() {
               VanillaJS
             </a>
             <a
+              href="#react"
               className={
                 activeLinks[1] ? "project-link" : "project-link-nonactive"
               }
@@ -72,6 +78,7 @@ function Header() {
               ReactJS
             </a>
             <a
+              href="#wordpress"
               className={
                 activeLinks[2] ? "project-link" : "project-link-nonactive"
               }
@@ -88,6 +95,7 @@ function Header() {
             <a
               href="https://media.tenor.com/CWgfFh7ozHkAAAAC/rick-astly-rick-rolled.gif"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={reactLogo} className="logo react" alt="React logo" />
             </a>

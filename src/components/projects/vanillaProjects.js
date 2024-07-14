@@ -1,8 +1,6 @@
 import bankly from "../../assets/bankly.jpg";
 import bankist from "../../assets/bankist.jpg";
 import weatherly from "../../assets/weather.jpg";
-import calculator from "../../assets/calculator.jpg";
-import todo from "../../assets/todo.jpg";
 import guessnum from "../../assets/guessnum.jpg";
 
 export const vanillaProjects = [
@@ -13,15 +11,9 @@ export const vanillaProjects = [
     src: bankly,
     tag: "In Progress",
     href: "https://bankly-h.netlify.app/",
+    alt: "Bank.ly",
   },
-  {
-    key: 2,
-    title: "Calc.ly",
-    type: "Calculator App",
-    src: calculator,
-    tag: "Completed",
-    href: "https://simple-calculator-h.netlify.app/",
-  },
+
   {
     key: 1,
     title: "Bankist",
@@ -29,29 +21,26 @@ export const vanillaProjects = [
     src: bankist,
     tag: "In Progress",
     href: "https://bankist-h.netlify.app/",
+    alt: "Bankist",
   },
+
   {
-    key: 3,
+    key: 2,
     title: "Weather.ly",
     type: "Weather App",
     src: weatherly,
     tag: "Completed",
     href: "https://weatherly-app-h.netlify.app/",
+    alt: "Weather.ly",
   },
+
   {
-    key: 4,
-    title: "To Do List",
-    type: "To Do App",
-    src: todo,
-    tag: "Completed",
-    href: "https://todo-hp.netlify.app/",
-  },
-  {
-    key: 5,
+    key: 3,
     title: "Number Guess",
     type: "Simple Game App",
     src: guessnum,
     tag: "Completed",
     href: "https://number-guess-h.netlify.app/",
+    alt: "Number Guess",
   },
 ];
