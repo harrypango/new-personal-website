@@ -20,6 +20,7 @@ const Menu = () => {
       <a
         href="https://github.com/harrypango"
         target="_blank"
+        rel="noreferrer"
         onClick={() => activate(0)}
         className={activeLinks[0] ? "active-link" : ""}
       >
@@ -28,6 +29,7 @@ const Menu = () => {
       <a
         href={cv}
         target="_blank"
+        rel="noreferrer"
         onClick={() => activate(1)}
         className={activeLinks[1] ? "active-link" : ""}
       >
@@ -36,6 +38,7 @@ const Menu = () => {
       <a
         href="https://www.linkedin.com/in/hari-pango/"
         target="_blank"
+        rel="noreferrer"
         onClick={() => activate(2)}
         className={activeLinks[2] ? "active-link" : ""}
       >
@@ -54,7 +57,7 @@ function Navbar() {
     } else {
       document.body.style.overflow = "auto";
     }
-  });
+  }, [toggleMenu]);
 
   return (
     <>
@@ -77,11 +80,19 @@ function Navbar() {
         <div className="overlay">
           <div className="overlay_close">
             <p onClick={() => setToggleMenu(false)}>Close</p>
-            <img onClick={() => setToggleMenu(false)} src={closeMenu} />
+            <img
+              onClick={() => setToggleMenu(false)}
+              src={closeMenu}
+              alt="closeMenu"
+            />
           </div>
           <div className="overlay_items">
             <Menu />
-            <a href="mailto: harry.pango@gmail.com" target="_blank" rel="noreferrer">
+            <a
+              href="mailto: harry.pango@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>E-mail me!</p>
             </a>
           </div>
